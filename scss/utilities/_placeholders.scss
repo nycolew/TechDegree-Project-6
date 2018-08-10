@@ -72,7 +72,6 @@
   width: 100%;
   padding: em(15px);
   margin-top: em(22px);
-  transition: opacity $trns-duration;
 
   &:hover {
     opacity: .75;
@@ -94,7 +93,7 @@
       color: $color-text;
       text-decoration: none;
       font-size: em(20px);
-      font-weight: $font-weight--thin;
+      font-weight: $font-weight--light;
     }
     &:hover > a {
       color: $white;
@@ -109,6 +108,6 @@
 
 %link {
   text-decoration: none;
-  color: $color-secondary;
+  color: #000;
   font-weight: 500;
 }

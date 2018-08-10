@@ -16,9 +16,8 @@
   @return map-get(map-get($palettes, $palette), $shade);
 }
 
-// Set grid context width
+// Import Google URL if variable exists
 
-@function g-context($g-col-width, $g-col-count, $g-gutter-width) {
-  $g-context: ($g-col-width * $g-col-count) + ($g-gutter-width * ($g-col-count - 1));
-  @return $g-context;
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
 }
