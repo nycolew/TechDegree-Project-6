@@ -22,9 +22,14 @@ p {
   margin-left: 25%;
   margin-right: 25%;
 
+
   @include mq(large) {
     font-size: em(22px);
   }
+}
+
+span {
+  margin-top: 10%;
 }
 
 body {

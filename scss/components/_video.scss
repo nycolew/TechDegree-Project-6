@@ -3,10 +3,13 @@
 // ==============================
 
 .videoWrapper {
+  @include flexify($dir: column);
   @extend %centered;
   width: 95%;
-}
+  margin-top: 5%;
 
-video {
-  @extend %centered;
+  video {
+    @extend %centered;
+    margin-top: 5%;
+  }
 }
