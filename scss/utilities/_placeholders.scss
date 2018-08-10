@@ -1,0 +1,114 @@
+// ===================================
+//        PLACEHOLDERS
+// ===================================
+
+
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Centering Helpers
+
+.centered {
+
+  @include mq(medium) {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+%centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%center-text {
+  text-align: center;
+}
+
+// Screen Reader Text
+
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// Element Styling
+// ===================================
+
+
+// Headlines
+
+%hdln-prim {
+  font-weight: $font-weight--bold;
+  color: $color-primary;
+  font-family: $font-family--primary;
+  padding-left: em(10px);
+}
+
+
+// Buttons
+
+%btn {
+  color: $white;
+  text-transform: uppercase;
+  font-family: $font-family--secondary;
+  font-size: em(22px);
+  border-radius: $br-default;
+  width: 100%;
+  padding: em(15px);
+  margin-top: em(22px);
+  transition: opacity $trns-duration;
+
+  &:hover {
+    opacity: .75;
+    }
+
+  &:active {
+    opacity: initial;
+  }
+}
+
+// Navigation
+
+%nav {
+    text-align: center;
+    list-style-type: none;
+    padding: em(20px) 0;
+
+    a {
+      color: $color-text;
+      text-decoration: none;
+      font-size: em(20px);
+      font-weight: $font-weight--thin;
+    }
+    &:hover > a {
+      color: $white;
+    }
+    &:hover  {
+    border-radius: $br-default;
+    background-color: $color-primary;
+  }
+}
+
+// Links
+
+%link {
+  text-decoration: none;
+  color: $color-secondary;
+  font-weight: 500;
+}

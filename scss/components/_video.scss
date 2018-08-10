@@ -1,0 +1,13 @@
+// ==============================
+//          VIDEO
+// ==============================
+
+.videoWrapper {
+  @extend %centered;
+  width: 95%;
+}
+
+video {
+  @extend %centered;
+  width: 100%;
+}

@@ -1,0 +1,127 @@
+// ===================================
+//          GLOBAL CONFIG
+// ===================================
+
+
+// Colors
+
+$white            : #fff;
+$black            : #0b0b0b;
+$grey             : #797e83;
+$turquoise        : #2ad4bd;
+$bright-turquoise : #00E5FF;
+$fountain-blue    : #52bab3;
+$emerald          : #5ece7f;
+$sunglo           : #e67478;
+$coral            : #ff784f;
+$purple-majesty   : #9279c3;
+$scooter          : #39add1;
+
+// Color Usage
+
+$color-primary    : $turquoise;
+$color-secondary  : $bright-turquoise;
+$color-text       : lighten($grey, 12%);
+
+
+// Button Colors
+
+$button-colors: (
+  default: $bright-turquoise,
+  success: $emerald,
+  error: $sunglo,
+  warning: $coral,
+  info: $purple-majesty
+);
+
+// Grid Colors
+
+$grid-bg-3      : #deb2ee; // French Lilac
+$grid-bg-4      : #7ee6fd; // Anakiwa
+$grid-bg-5      : #88d9a0; // Vista Blue
+$grid-bg-6      : #3fabca; // Shakespeare
+$grid-bg-7      : #ec9fa3; // Sea Pink
+$grid-bg-8      : #fd9f85; //  Vivid Tangerine
+$grid-bg-12     : #80e8d1; // Riptide
+
+// Theme Color Map
+
+$theme-colors: (
+  '3'       : $grid-bg-3,
+  '4'       : $grid-bg-4,
+  '5'       : $grid-bg-5,
+  '6'       : $grid-bg-6,
+  '7'       : $grid-bg-7,
+  '8'       : $grid-bg-8,
+  '12'      : $grid-bg-12
+);
+
+// Color Palette Modifiers
+
+$palettes: (
+  grey: (
+    xx-light: lighten($grey, 43%),
+    x-light : lighten($grey, 35%),
+    light   : lighten($grey, 12%),
+    base    : $grey,
+    dark    : darken($grey, 8%),
+    x-dark  : darken($grey, 16%)
+  ),
+  black: (
+    light   : lighten($black, 10%),
+    base    : $black,
+    dark    : darken($black, 10%)
+  )
+);
+
+// Font Stacks
+
+$font-url--google         : 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Poppins';
+
+$font-family--primary     : 'Lato','Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary   : 'Poppins', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--tertiary   : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+//Font Weights
+
+$font-weight--thin  : 100;
+$font-weight--light : 300;
+$font-weight--medium: 400;
+$font-weight--bold  : 700;
+$font-weight--ultra : 900;
+
+// Text
+
+$base__font-size : 18px;
+$base__line: 26px;
+$letter-space: 1px;
+
+// Breakpoints
+$brkpoint-sm: 1px;
+$brkpoint-md: 768px;
+$brkpoint-lg: 1024px;
+
+// Border Radius
+
+$br-default   : .4em;
+
+// Grid Config
+
+$g-col-width      : 75px;
+$g-gutter-width   : 20px;
+$g-col-count      : 12;
+$g-cont-max-w     : 100%;
+
+// Margins
+
+$marg-xx-sm     : 6px;
+$marg-x-sm      : 15px;
+$marg-sm        : 30px;
+$marg-md        : 50px;
+$marg-lg        : 100px;
+$marg-x-lg      : 200px;
+$marg-xx-lg     : 250px;
+
+// Transitions
+
+$trns-duration    : 2s;
