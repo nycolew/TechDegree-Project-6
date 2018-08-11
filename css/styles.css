@@ -388,6 +388,7 @@ body {
   margin-right: auto;
   width: 95%;
   margin-top: 5%;
+  max-width: 1100px;
 }
 .wrapper video {
   margin-left: auto;
