@@ -13,7 +13,7 @@ ul {
 }
 
 p {
-  font-size: $base__font-size;
+  font-size: em(24px);
   line-height: $base__line;
   font-weight: $font-weight--light;
   font-family: $font-family--primary;
@@ -21,11 +21,6 @@ p {
   text-align: center;
   margin-left: 25%;
   margin-right: 25%;
-
-
-  @include mq(large) {
-    font-size: em(22px);
-  }
 }
 
 span {

@@ -2,14 +2,18 @@
 //          VIDEO
 // ==============================
 
-.videoWrapper {
-  @include flexify($dir: column);
-  @extend %centered;
+.wrapper {
+  @include flexify($dir: column, $just: center);
+  margin-left: auto;
+  margin-right: auto;
   width: 95%;
   margin-top: 5%;
 
   video {
-    @extend %centered;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 5%;
+    width: 100%;
+    height: 100%;
   }
 }
