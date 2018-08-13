@@ -10,12 +10,16 @@ $black            : #0b0b0b;
 $grey             : #797e83;
 $eastern-blue     : #1B98C2;
 $porcelain        : #E6EBED;
+$scandal          : #C5FAD9;
+$salem            : #119E45;
+$parsley          : #0E3F20;
 
 // Color Usage
 
-$color-primary    : $eastern-blue;
-$color-secondary  : $porcelain;
+$color-primary    : $parsley;
+$color-secondary  : lighten($scandal, 5%);
 $color-text       : lighten($grey, 12%);
+$color-link       : $salem;
 
 
 // Color Palette Modifiers
@@ -38,9 +42,9 @@ $palettes: (
 
 // Font Stacks
 
-$font-url--google         : 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700';
+$font-url--google         : 'https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700';
 
-$font-family--primary     : 'Open Sans Condensed','Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--primary     : 'Nanum Gothic','Helvetica Neue', Helvetica, Arial, sans-serif;
 
 //Font Weights
 
@@ -49,8 +53,8 @@ $font-weight--bold  : 700;
 
 // Text
 
-$base__font-size : 18px;
-$base__line: 26px;
+$base__font-size : 20px;
+$base__line: 1.2;
 $letter-space: 1px;
 
 // Breakpoints
