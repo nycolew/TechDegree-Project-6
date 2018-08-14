@@ -23,6 +23,10 @@ vid.ontimeupdate = () => {
 //change cursor style
 document.getElementById("transcript").style.cursor = "pointer";
 
-document.querySelectorAll("span").addEventListener("click", function(event) {
-  vid.currentTime = event.target.getAttribute("data-start");
-})
+const currentSpan = document.querySelectorAll("p span");
+
+for(let i = 0; i < currentSpan.length; i += 1) {
+  currentSpan[i].addEventListener("click", function(event) {
+    vid.currentTime = event.target.getAttribute("data-start");
+  })
+}

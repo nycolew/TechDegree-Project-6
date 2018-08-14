@@ -7,8 +7,10 @@ p {
   font-size: $base__font-size;
 }
 
-span {
-  :hover {
-    color: lighten($color-text, 45%);
+#transcript {
+  span {
+    :hover {
+      color: $salem;
+    }
   }
 }
