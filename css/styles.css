@@ -376,6 +376,10 @@ p {
   font-size: 20px;
 }
 
+span :hover {
+  color: white;
+}
+
 .mejs-styles .mejs__controls:not([style*="display: none"]) {
   background: linear-gradient(#16cc59, #0c7031);
 }

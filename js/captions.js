@@ -15,3 +15,14 @@ vid.ontimeupdate = () => {
     }
   }
 };
+
+
+// Click transcript to be taken to that video segment
+
+
+//change cursor style
+document.getElementById("transcript").style.cursor = "pointer";
+
+document.querySelectorAll("span").addEventListener("click", function(event) {
+  vid.currentTime = event.target.getAttribute("data-start");
+})

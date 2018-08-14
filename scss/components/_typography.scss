@@ -6,3 +6,9 @@ p {
   line-height: $base__line;
   font-size: $base__font-size;
 }
+
+span {
+  :hover {
+    color: lighten($color-text, 45%);
+  }
+}
