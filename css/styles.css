@@ -376,6 +376,13 @@ p {
   font-size: 20px;
 }
 
+span {
+  color: #999da1;
+}
+span:hover {
+  color: #0E3F20 !important;
+}
+
 .mejs-styles .mejs__controls:not([style*="display: none"]) {
   background: linear-gradient(#16cc59, #0c7031);
 }

@@ -1,8 +1,10 @@
+//Highlight transcript segment currently playing
+
 const vid = document.getElementsByTagName('video')[0];
 const spans = document.getElementsByTagName('span');
 
 vid.ontimeupdate = () => {
-  for (let i = 0; i <= spans.length; i += 1) {
+  for (let i = 0; i <= spans.length; i ++) {
     const vidTime = vid.currentTime;
     if (vidTime > spans[i].getAttribute("data-start")
     && vidTime < spans[i].getAttribute("data-end")) {
@@ -17,24 +19,16 @@ vid.ontimeupdate = () => {
 };
 
 
-// Click transcript to be taken to that video segment
-
-
 //change cursor style
 document.getElementById("transcript").style.cursor = "pointer";
+
+// Click transcript to be taken to that video segment
 
 const currentSpan = document.querySelectorAll("p span");
 
 for(let i = 0; i < currentSpan.length; i += 1) {
   currentSpan[i].addEventListener("click", function(event) {
     vid.currentTime = event.target.getAttribute("data-start");
-  })
-
-  currentSpan[i].addEventListener("mouseover", function(event) {
-    event.target.style.color = "#0E3F20";
-  })
-
-  currentSpan[i].addEventListener("mouseout", function(event) {
-    event.target.style.color = "#797e83";
+    vid.play();
   })
 }
