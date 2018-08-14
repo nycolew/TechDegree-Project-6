@@ -29,4 +29,12 @@ for(let i = 0; i < currentSpan.length; i += 1) {
   currentSpan[i].addEventListener("click", function(event) {
     vid.currentTime = event.target.getAttribute("data-start");
   })
+
+  currentSpan[i].addEventListener("mouseover", function(event) {
+    event.target.style.color = "#0E3F20";
+  })
+
+  currentSpan[i].addEventListener("mouseout", function(event) {
+    event.target.style.color = "#797e83";
+  })
 }

@@ -376,10 +376,6 @@ p {
   font-size: 20px;
 }
 
-#transcript span :hover {
-  color: #119E45;
-}
-
 .mejs-styles .mejs__controls:not([style*="display: none"]) {
   background: linear-gradient(#16cc59, #0c7031);
 }
